@@ -1,0 +1,31 @@
+{
+  "name": "ts-promise",
+  "version": "1.0.0",
+  "description": "Learn to implements Promise/A+ with TypeScript",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "pretest": "tsc",
+    "test": "mocha  --reporter spec test/*.spec.js",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.spec.js - - -R spec"
+  },
+  "author": "banxi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/banxi1988/ts-promise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/banxi1988/ts-promise/issues"
+  },
+  "homepage": "https://github.com/banxi1988/ts-promise#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "promises-aplus-tests": "^2.1.2",
+    "typescript": "^2.9.2"
+  }
+}
